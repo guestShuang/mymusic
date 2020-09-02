@@ -1,12 +1,11 @@
 var express = require('express')
 var compression = require('compression')
-var config = require('./config/index')
 var axios = require('axios')
 var bodyParser = require('body-parser')
 var cookieParser = require('cookie-parser')
 var csrf = require('xsrf')
 
-var port = process.env.PORT || config.build.port
+const port = process.env.PORT || 9000
 
 var app = express()
 
